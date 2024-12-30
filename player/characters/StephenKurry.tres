@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=2 format=3 uid="uid://b1c01dkh0geyt"]
+
+[ext_resource type="Script" path="res://player/player_stats.gd" id="1_5j500"]
+
+[resource]
+script = ExtResource("1_5j500")
+name = "Stephen Kurry"
+accuracy = 0.5
+strength = 5
+speed = 5
+dexterity = 9
+concentration = 9

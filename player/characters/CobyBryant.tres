@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=2 format=3 uid="uid://dmti55wfdsgeb"]
+
+[ext_resource type="Script" path="res://player/player_stats.gd" id="1_jq1oe"]
+
+[resource]
+script = ExtResource("1_jq1oe")
+name = "Coby Bryant"
+accuracy = 0.3
+strength = 6
+speed = 7
+dexterity = 4
+concentration = 8
