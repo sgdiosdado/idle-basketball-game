@@ -1,15 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5e1q3conrjwo"]
+[gd_scene load_steps=5 format=3 uid="uid://b5e1q3conrjwo"]
 
-[ext_resource type="PackedScene" uid="uid://dwq5b1502mfmw" path="res://player/player.tscn" id="1_7a037"]
-[ext_resource type="Resource" uid="uid://b1c01dkh0geyt" path="res://player/characters/StephenKurry.tres" id="2_hu0e6"]
-[ext_resource type="Resource" uid="uid://dmti55wfdsgeb" path="res://player/characters/CobyBryant.tres" id="3_avb4o"]
+[ext_resource type="Script" path="res://Main.gd" id="1_p2r7x"]
+[ext_resource type="PackedScene" uid="uid://dwq5b1502mfmw" path="res://player/Player.tscn" id="2_a4ilg"]
+[ext_resource type="Resource" uid="uid://b1c01dkh0geyt" path="res://player/characters/StephenKurry.tres" id="3_1s6y0"]
+[ext_resource type="Resource" uid="uid://dmti55wfdsgeb" path="res://player/characters/CobyBryant.tres" id="4_7y05p"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_p2r7x")
 
-[node name="BasePlayer" parent="." instance=ExtResource("1_7a037")]
-attributes = ExtResource("2_hu0e6")
+[node name="StephenKurry" parent="." instance=ExtResource("2_a4ilg")]
+position = Vector2(319, 207)
+stats = ExtResource("3_1s6y0")
 
-[node name="BasePlayer2" parent="." instance=ExtResource("1_7a037")]
-attributes = ExtResource("3_avb4o")
+[node name="CobyBryant" parent="." instance=ExtResource("2_a4ilg")]
+position = Vector2(570, 209)
+stats = ExtResource("4_7y05p")
 
-[node name="BasePlayer3" parent="." instance=ExtResource("1_7a037")]
+[node name="Score" type="Label" parent="."]
+offset_left = 458.0
+offset_top = 89.0
+offset_right = 501.0
+offset_bottom = 112.0
+text = "Score"

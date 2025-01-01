@@ -7,3 +7,13 @@ class_name PlayerStats
 @export var speed: int
 @export var dexterity: int
 @export var concentration: int
+
+func debug():
+	print(name)
+	print({
+		"accuracy": accuracy, 
+		"concentration": concentration, 
+		"dexterity": dexterity, 
+		"speed": speed,
+		"strength": strength
+	})
