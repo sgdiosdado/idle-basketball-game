@@ -11,7 +11,6 @@ var role: RoleStrategy
 func _ready() -> void:
 	if stats:
 		$Button.text = stats.name
-		role = PointGuardRole.new()
 	else:
 		print("No PlayerStats set")
 
@@ -21,4 +20,4 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	role.generate_points(stats)
+	role.generate_points()
