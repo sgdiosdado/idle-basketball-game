@@ -18,6 +18,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_timer_timeout() -> void:
 	role.generate_points()
+
+func _on_button_pressed() -> void:
+	self.role.on_click()

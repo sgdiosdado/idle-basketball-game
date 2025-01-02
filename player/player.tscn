@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_r6s4b"]
 
-[node name="BasePlayer" type="Node2D"]
+[node name="Player" type="Node2D"]
 script = ExtResource("1_r6s4b")
 
 [node name="Timer" type="Timer" parent="."]
@@ -15,3 +15,4 @@ text = "Player"
 flat = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
